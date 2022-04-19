@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "info": {
+    "name": "video",
+    "description": "This represents the video Model"
+  },
+  "attributes": {
+    "coverUrl": {
+      "default": "",
+      "type": "string"
+    },
+    "videoUrl": {
+      "via": "related",
+      "type": "string"
+    },
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "description": {
+      "default": "",
+      "type": "text"
+    }
+  }
+}

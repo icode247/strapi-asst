@@ -1,0 +1,29 @@
+{
+    "routes": [
+      {
+        "method": "GET",
+        "path": "/api/v1/video",
+        "handler": "Video.find"
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/video/:id",
+        "handler": "Video.findOne"
+      },
+      {
+        "method": "POST",
+        "path": "/api/v1/Video",
+        "handler": "Video.create"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/v1/Video/:id",
+        "handler": "Video.update"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/v1/Video/:id",
+        "handler": "Video.delete"
+      }
+    ]
+  }

@@ -1,0 +1,104 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+:root {
+  --primary-color: #282c34;
+  --secondary-color: white;
+}
+.container {
+  background-color: var(--primary-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: rows;
+  font-size: calc(10px + 2vmin);
+  color: var(--secondary-color);
+}
+.aside {
+  width: 40%;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.aside ul {
+  list-style: none;
+}
+
+.aside ul li {
+  border: 1px solid var(--primary-color);
+  padding: 6px;
+  cursor: pointer;
+}
+
+.aside ul li:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+.video-container {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--secondary-color);
+}
+
+.Modal {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  background-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.Modal .form-container {
+  display: flex;
+  justify-content: center;
+}
+.Modal .form-container form {
+  margin: 20px;
+}
+.Modal .form-container form input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 7px;
+  width: 300px;
+}
+
+.Modal .form-container form button {
+  padding: 10px;
+  background-color: var(--primary-color);
+  border: none;
+  width: 320px;
+  color: var(--secondary-color);
+}
+
+.Modal .form-container form button:hover {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.close {
+  display: block;
+  color: var(--primary-color);
+  margin: 10px;
+  text-align: right;
+  cursor: pointer;
+}
+
+.open{
+  position:absolute;
+  left:10px;
+  bottom:10px;
+  background-color: var(--primary-color);
+  height:40px;
+  width: 40px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 25px;
+  z-index: 1;
+  cursor: pointer;
+}
